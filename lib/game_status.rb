@@ -18,7 +18,7 @@ end
 
 def full?(board)
   board.each do |value|
-    if value != "X" || value != "O"
+    if value != "X" && value != "O"
       return false
     end
   end
