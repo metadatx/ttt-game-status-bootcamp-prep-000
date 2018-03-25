@@ -15,3 +15,12 @@ def won?(board)
   end
   return false
 end
+
+def full?(board)
+  board.each do |value|
+    if value != "X" || value != "O"
+      return false
+    end
+  end
+  return true
+end
